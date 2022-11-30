@@ -1,87 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Form</title>
     <style>
-        h1 {
-            font-family: Arial, Helvetica, sans-serif;
-            margin-bottom: 0;
-        }
-        .title {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 15px;
-            padding-bottom: 8px;
-        }
-        form {
-            font-family: Arial, Helvetica, sans-serif;
-            margin-bottom: 6px;
-            font-size: 14px;
-        }
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 0;
+      }
+      .title {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        padding-bottom: 8px;
+      }
+      form {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 6px;
+        font-size: 14px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Clarusway Survey Form</h1>
-    <p class="title">Thank you for taking the time to help us improve the platform</p>
+    <p class="title">
+      Thank you for taking the time to help us improve the platform
+    </p>
     <form>
-        <label for="Name">Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-        <input 
-        type="text"
-        placeholder="Enter your name"
-        label="Name"
-        />
-        <br>
-        <br>
-        <label for="Name">Surname &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-        <input 
-        type="text"
-        placeholder="Enter your surname"
-        label="Surname"
-        />
-        <br>
-        <br>
-        <label for="Name">Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-        <input 
-        type="email"
-        placeholder="user@clarusway.com"
-        label="Email"
-        />
-        <br>
-        <p>Which option best describes your current role?</p>
-        <select id="role">
-            <option value="" disabled selected hidden>Select current role</option>
-            <option value="Student">Student</option>
-            <option value="Developer">Developer</option>
-        </select>
-        <br>
-        <p>Would you recommend Clarusway to a friend?</p>
-        <input type="radio" id="definitely" name="recommend" value="Definitely, Yes">
-        <label for="Definitely, Yes">Definitely, Yes</label>
-        <input type="radio" id="Maybe" name="recommend" value="Maybe">
-        <label for="Maybe">Maybe</label>
-        <input type="radio" id="Not Sure" name="recommend" value="Not Sure">
-        <label for="Not Sure">Not Sure</label>
-        <input type="radio" id="No" name="recommend" value="No">
-        <label for="No">Definitely, No</label>
-        <br>
-        <p>What would you like to see improved?&nbsp;&nbsp;&nbsp;&nbsp;(Check all that apply)</p>
-        <input type="checkbox" id="Front-End" name="Front-End" value="Front-End">
-        <label for="Front-End">Front-End Projects</label>
-        <input type="checkbox" id="Back-End" name="Back-End" value="Back-End">
-        <label for="Back-End">Back-End Projects</label>
-        <input type="checkbox" id="DataScience" name="DataScience" value="DataScience">
-        <label for="DataScience">Data Science</label>
-        <input type="checkbox" id="AdditionalCourses" name="AdditionalCourses" value="AdditionalCourses">
-        <label for="AdditionalCourses">Additional Courses</label>
-        <br>
-        <br>
-        <label for="suggestions">Any comments or suggestions?</label>
-        <br><br>
-        <textarea id="suggestions" name="suggestions" rows="7" cols="70">Enter your comment here...Thanks for your comments...</textarea>
-        <br><br>
-        <input type="button" value="Submit">
+      <label for="Name">Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      <input type="text" placeholder="Enter your name" label="Name" />
+      <br />
+      <br />
+      <label for="Name">Surname &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      <input type="text" placeholder="Enter your surname" label="Surname" />
+      <br />
+      <br />
+      <label for="Name">Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      <input type="email" placeholder="user@clarusway.com" label="Email" />
+      <br />
+      <p>Which option best describes your current role?</p>
+      <select id="role">
+        <option value="" disabled selected hidden>Select current role</option>
+        <option value="Student">Student</option>
+        <option value="Developer">Developer</option>
+      </select>
+      <br />
+      <p>Would you recommend Clarusway to a friend?</p>
+      <input
+        type="radio"
+        id="definitely"
+        name="recommend"
+        value="Definitely, Yes"
+      />
+      <label for="Definitely, Yes">Definitely, Yes</label>
+      <input type="radio" id="Maybe" name="recommend" value="Maybe" />
+      <label for="Maybe">Maybe</label>
+      <input type="radio" id="Not Sure" name="recommend" value="Not Sure" />
+      <label for="Not Sure">Not Sure</label>
+      <input type="radio" id="No" name="recommend" value="No" />
+      <label for="No">Definitely, No</label>
+      <br />
+      <p>
+        What would you like to see improved?&nbsp;&nbsp;&nbsp;&nbsp;(Check all
+        that apply)
+      </p>
+      <input
+        type="checkbox"
+        id="Front-End"
+        name="Front-End"
+        value="Front-End"
+      />
+      <label for="Front-End">Front-End Projects</label>
+      <input type="checkbox" id="Back-End" name="Back-End" value="Back-End" />
+      <label for="Back-End">Back-End Projects</label>
+      <input
+        type="checkbox"
+        id="DataScience"
+        name="DataScience"
+        value="DataScience"
+      />
+      <label for="DataScience">Data Science</label>
+      <input
+        type="checkbox"
+        id="AdditionalCourses"
+        name="AdditionalCourses"
+        value="AdditionalCourses"
+      />
+      <label for="AdditionalCourses">Additional Courses</label>
+      <br />
+      <br />
+      <label for="suggestions">Any comments or suggestions?</label>
+      <br /><br />
+      <textarea id="suggestions" name="suggestions" rows="7" cols="70">
+Enter your comment here...Thanks for your comments...</textarea
+      >
+      <br /><br />
+      <input type="button" value="Submit" />
     </form>
-</body>
+  </body>
 </html>
