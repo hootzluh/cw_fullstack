@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics</title>
+    <style>
+        .Table {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #ffffff;
+            font-size: 25px;
+        }
+        .A {
+            background-color: #01DC99;
+            width: 150px;
+            height: 110px;
+            text-align: center;
+            border: solid #ffffff 3px;       
+        }
+        .B {
+            background-color: #DF9801;
+            width: 150px;
+            height: 110px;
+            text-align: center;
+            border: solid #ffffff 3px;
+        }
+        .D {
+            background-color: #9A00E0;
+            width: 150px;
+            height: 110px;
+            text-align: center;
+            border: solid #ffffff 3px;
+        }
+        .E {
+            background-color: #DF009C;
+            width: 150px;
+            height: 110px;
+            text-align: center;
+            border: solid #ffffff 3px;
+        }
+        .F {
+            background-color: #009ADE;
+            width: 150px;
+            height: 110px;
+            text-align: center;
+            border: solid #ffffff 3px;
+        }
+        .C {
+            background-color: #99DD00;
+            width: 150px;
+            height: 110px;
+            text-align: center;
+            border: solid #ffffff 3px;
+            padding-bottom: 140px;
+        }
+    </style>
+</head>
+<body>
+    <table class="Table">
+        <thead>
+            <tr class="row">
+            <td class="A">A</td>
+            <td class="B">B</td>
+            <td class="D">D</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="row">
+            <td class="E">E</td>
+            <td class="C" colspan="2" rowspan="2">C</td>
+            </tr>
+            <tr>
+                <td class="F">F</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
