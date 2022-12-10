@@ -8,3 +8,8 @@ let x = 10
 let y = x++
 
 console.log(y);
+
+
+
+a = 1 + 2 * (5 - 4 / 2) ** 2
+console.log(a)
