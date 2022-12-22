@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+</head>
+<body>
+    Before the image
+    
+    <img src="shapes.png" alt="3 shapes" title="3 shapes from title"  border="5" usemap="#Courses">
+
+    <map name="Courses">
+        <!-- X and Y cordinants of the center, radius -->
+        <area 
+            shape="circle" 
+            coords="135,175,62" 
+            href="https://clarusway.com/full-stack-developer/" 
+            alt="Full stack">
+        <!-- X and Y cordinants of top-left, X and Y cordinants of bottom-right-->
+        <area 
+            shape="rect" 
+            coords="253,114, 377, 238" 
+            href="https://clarusway.com/front-end-developer/" 
+            alt="Front end">
+        <!-- X and Y cordinants of point 1 to the following points-->
+        <area 
+            shape="poly" 
+            coords="434,163, 499,115 , 564,163, 540,238, 460,238" 
+            href="https://clarusway.com/back-end-developer/" 
+            alt="Back end">
+    </map>
+    
+    After the image
+
+    <img src="BigPicture.jpg" width="500px">
+</body>
+</html>

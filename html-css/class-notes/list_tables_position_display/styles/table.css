@@ -1,0 +1,43 @@
+table, td, th{
+  border: 2px solid green;
+}
+table{
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th{
+  height: 70px;
+  vertical-align: bottom;
+  background-color: brown;
+  color: white;
+}
+td{
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding: 20px;
+  /* background-color: aqua;
+  color: rebeccapurple; */
+}
+
+
+tr:nth-child(odd){
+  background-color: white;
+  color: black;
+}
+
+tr:nth-child(even){
+  background-color: aqua;
+}
+
+
+tr:hover, th:hover{
+  background-color: yellow;
+  color: red;
+}
+
+caption{
+  text-align: center;
+  caption-side: top;
+}

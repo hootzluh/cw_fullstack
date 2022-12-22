@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Elements</title>
+
+  <style>
+    p::first-letter{
+      font-size: 70px;
+      color: green;
+    }
+    p::first-line{
+      font-style: italic;
+      font-weight: 900;
+    }
+
+    ul{
+      list-style: none;
+    }
+    li::before{
+      content: '\1F60A';
+      font-size: 30px;
+    }
+
+    li::after{
+      content: '\1F60B';
+      font-size: 30px;
+    }
+
+    input[type="checkbox"]{
+      appearance: none;
+    }
+
+    input[type="checkbox"]::before{
+      content: '';
+      width: 35px;
+      height: 35px;
+      background-color: red;
+      border-radius: 5px;
+      display: block;
+    }
+
+    input[type="checkbox"]:checked::before{
+      background-color: green
+    }
+
+
+  </style>
+</head>
+<body>
+  
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam et numquam voluptatum recusandae voluptatem, autem deleniti explicabo saepe eum accusantium minima odio eius reprehenderit, quas velit, libero deserunt maiores blanditiis?</p>
+
+
+  <ul>
+    <li> Item 1</li>
+    <li> Item 2</li>
+    <li> Item 3</li>
+    <li>Item &#128077; 4</li>
+  </ul>
+
+
+  <form >
+    <input type="checkbox" name="" id="">
+  </form>
+</body>
+</html>

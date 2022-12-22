@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float overflow</title>
+  <style>
+    div{
+      border: 2px solid red;
+
+    }
+    img{ 
+      float: right;
+    }
+
+    p{
+      float: left;
+    }
+
+    .clearFix{
+      clear: both; 
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  
+
+  <div class="clearFix"> 
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident fugiat suscipit obcaecati. Nostrum, fugiat. Asperiores sunt aspernatur architecto cupiditate commodi vitae. Ullam soluta facilis porro cum error blanditiis cumque consequuntur?</p>
+
+    <img src="./images/pic.jpg" alt="" width="200" height="200">
+  </div>
+</body>
+</html>

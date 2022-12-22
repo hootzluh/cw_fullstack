@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+
+  <style>
+    #box{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: absolute;
+      animation-name: moveright;
+      animation-duration: 5s;
+      animation-delay: 1s;
+      animation-direction: normal;
+      /* animation-iteration-count: 2; */
+      animation-fill-mode: both;
+      top:50%;
+      left:50%;
+
+      animation: moveright 5s alternate infinite ease-in-out forwards; 
+
+    }
+
+
+    /* Define animation */
+    @keyframes moveright{
+      from{
+          top:0%;
+          left:0%;
+          background-color: red;
+      }
+      to{
+        top:87%;
+        left:87%;
+        background-color: green;
+      }
+      /* 0%{
+          left:0%;
+      }
+      100%{
+        left:100%;
+      } */
+
+
+    }
+
+
+    @keyframes spin{
+      0%{
+        transform: rotate(0deg);
+      }
+      100%{
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  
+
+
+
+  <div id="box"> BOX</div>
+
+</body>
+</html>
