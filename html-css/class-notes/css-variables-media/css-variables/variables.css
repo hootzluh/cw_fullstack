@@ -1,0 +1,9 @@
+:root{
+  --primary-color: orange;
+  --secondary-color: lightblue;
+  --card-color: lightgreen;
+  --border-color: green;
+  --border-radius: 10px;
+  --primary-unit: 10px;
+  --border: green solid 10px;
+}

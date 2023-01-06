@@ -1,12 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="first-container">
+      <div class="nav-container">
+        <div class="nav-row">
+          <div class="nav-logo">
+            <a href="#"> Transparent to Solid Nav Row </a>
+          </div>
+          <div class="nav-controls">
+            <a href="#section1">Item One</a>
+            <a href="#section2">Item Two</a>
+            <a href="#section3">Item Three</a>
+          </div>
+          <div class="clocks">
+            <div class="content-container">
+              <div class="content">
+                <div class="canvas1">
+                  <canvas
+                    id="canvas"
+                    width="150"
+                    height="150"
+                    style="background-color: #333"
+                  ></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            $(document).ready(function () {
+              $(window).scroll(function () {
+                var height = $(".first-container").height();
+                var scrollTop = $(window).scrollTop();
+
+                if (scrollTop >= height - 40) {
+                  $(".nav-container").addClass("solid-nav");
+                } else {
+                  $(".nav-container").removeClass("solid-nav");
+                }
+              });
+            });
+          </script>
+        </div>
+      </div>
+      <video autoplay muted loop id="bgVideo">
+        <source src="./images/squares.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="container" id="section1">
+      <div class="row">
+        <h1>Fixed &amp; Transparent Nav</h1>
+        <p>
+          The man in black fled across the desert and the gunslinger followed.
+        </p>
+      </div>
+    </div>
+
+    <div class="container" id="section2">
+      <div class="row">
+        <h1>Section</h1>
+        <p>
+          The man in black fled across the desert and the gunslinger followed.
+        </p>
+      </div>
+    </div>
+
+    <div class="container" id="section3">
+      <div class="row">
+        <h1>Section</h1>
+        <p>
+          The man in black fled across the desert and the gunslinger followed.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  </body>
 </html>
