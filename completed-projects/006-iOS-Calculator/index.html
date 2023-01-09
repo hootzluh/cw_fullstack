@@ -1,51 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iOS Calculator</title>
-</head>
-<body>
-
-    <div class="container">
-
-      <div class="container" id="row1" >
-        <div>AC</div>
-        <div>±</div>
-        <div class="button">%</div>
-        <div class="button">÷</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">
+        <div class="previous-display"></div>
+        <div class="current-display"></div>
       </div>
-
-      <div class="container" id="row2">
-        <div class="button"><button id="num7" type="submit">7</button>
-        <div class="button"><button id="num8" type="submit">8</button>
-        <div class="button"><button id="num9" type="submit">9</button>
-        <div class="button"><button id="multiply" type="submit">x</button>
+      <div class="buttons-container">
+        <div class="button function ac">AC</div>
+        <div class="button function pm">±</div>
+        <div class="button function percent">%</div>
+        <div class="button operator division">÷</div>
+        <div class="button num number-7">7</div>
+        <div class="button num number-8">8</div>
+        <div class="button num number-9">9</div>
+        <div class="button operator multiplication">x</div>
+        <div class="button num number-4">4</div>
+        <div class="button num number-5">5</div>
+        <div class="button num number-6">6</div>
+        <div class="button operator subtraction">-</div>
+        <div class="button num number-1">1</div>
+        <div class="button num number-2">2</div>
+        <div class="button num number-3">3</div>
+        <div class="button operator addition">+</div>
+        <div class="button num number-0">0</div>
+        <div class="button num decimal">.</div>
+        <div class="button equal">=</div>
       </div>
-      
-      <div class="container" id="row3">
-        <div class="button"><button id="num4" type="submit">4</button>
-        <div class="button"><button id="num5" type="submit">5</button>
-        <div class="button"><button id="num6" type="submit">6</button>
-        <div class="button"><button id="minus" type="submit">-</button>
-      </div>
-      
-      <div class="container" id="row3">
-        <div class="button"><button id="num1" type="submit">1</button>
-        <div class="button"><button id="num2" type="submit">2</button>
-        <div class="button"><button id="num3" type="submit">3</button>
-        <div class="button"><button id="plus" type="submit">+</button>
-      </div>
-      
-      <div class="container" id="row3">
-        <div class="button"><button id="zero" type="submit">0</button>
-        <div class="button"><button id="decimal" type="submit">.</button>
-        <div class="button"><button id="equal" type="submit">=</button>
-      </div>
-    
     </div>
-
-
-</body>
+  </body>
 </html>
