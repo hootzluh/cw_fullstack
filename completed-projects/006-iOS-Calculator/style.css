@@ -1,0 +1,8 @@
+/* #ac:hover{
+    filter: brightness(80%);
+} */
+
+a {
+    border: solid 2px black;
+    text-decoration: none;
+}
