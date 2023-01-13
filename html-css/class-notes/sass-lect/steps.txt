@@ -1,0 +1,18 @@
+npm init -y         // create package.json 
+npm install sass    // install sass package 
+
+create a script to run sass commands e.g.
+
+"scripts": {
+    "dev": "sass --watch style.scss:main.css"
+  },
+
+  npm run dev    //run the script 
+
+
+  //----------------------------------------
+
+
+  inheritance => @extend    can't take input and can't return values 
+  mixins      => @mixin     can take inputs 
+  functions   => @function  can take inputs and can return values 

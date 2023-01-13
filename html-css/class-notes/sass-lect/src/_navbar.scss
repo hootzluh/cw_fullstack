@@ -1,0 +1,30 @@
+
+nav {
+	padding: 0.25rem;
+	background-color: $primary-color;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	img {
+		width: 150px;
+	}
+
+	ul {
+		list-style: none;
+		display: flex;
+			a {
+				text-decoration: none;
+				color: $secondary-color;
+        padding: 1rem;
+        transition: all 0.5s ease-in-out;
+        border-radius: 5px;
+        &:hover{
+        background-color: $secondary-color;
+        color: $primary-color;
+        
+      }
+      }
+
+	}
+}
