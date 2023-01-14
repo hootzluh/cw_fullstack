@@ -1,0 +1,38 @@
+@import "global", "home", "menu";
+
+body {
+    background-color: $primary-color;
+    color: set-text-color($primary-color);
+    height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.2;
+}
+
+//General styling
+h1,
+h2,
+h3 {
+    font-weight: 400;
+    // margin-bottom: 1rem;
+}
+
+a {
+    color: set-text-color($primary-color);
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+}
+
+footer {
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0.4rem;
+    right: 1rem;
+    text-align: center;
+    padding: 1rem;
+    color: set-text-color($primary-color);
+}
