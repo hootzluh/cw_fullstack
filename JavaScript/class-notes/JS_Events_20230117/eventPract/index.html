@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 24px;
+        }
+        textarea {
+            width: 500px;
+            height: 150px;
+            resize: none;
+        }
+        label{
+            display: inline-block;
+            width: 150px;
+        }
+        .default{
+            border: 3px solid orange;
+            border-radius: 5px;
+        }
+        .whiteBorder{
+            border: 3px solid white;
+            border-radius: 5px;
+        }
+        div{
+            padding: 5px;
+            margin: 5px;
+            width: 500px;
+        }
+        .warning{
+            color: red;
+            display: inline-block;
+            height: 30px;
+            padding: 0px 10px;
+            border-right: 3px solid red; 
+            border-left: 3px solid red;
+            font-size: 18px;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form id="formExample">
+        <span id="warning" ></span>
+        <div id="uNameDiv" class="default">
+            <label for="uName">
+                User Name : 
+            </label>
+            <input type="text" id="uName">
+        </div>
+        <div id="passDiv" class="default">
+            <label for="pass">
+                Password : 
+            </label>
+            <input type="password" id="pass">
+        </div>
+        <div id="commentsDiv" >
+            <label for="comments">Comments: </label> 
+            <span id="zoom">(Zoom)</span> <br/>
+            <textarea name="comments" id="comments" cols="30" rows="10"
+            ></textarea><br/>
+            Counter : <span id="charCount">0</span> / 20
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+<script src="main.js"></script>
+</html>
